@@ -2,39 +2,32 @@
 <html>
 <head>
   <title>Dit is mijn site</title>
-  <style>
-    h1 { 
-      font: size; 40px;
-      font-weight: normal;
-      color: rgb(100, 100, 100);
-      text-align: center;
-       }
-  #banner { width: 100%;
-            height: 250px;
-            object-fit: cover;
-  }
-    #container {
-      max-width: 720px;
-      margin-left: 10px;
-    }
-    
-  </style>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device=width, initial-scale=1'>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 </head>
     <body>
-      <div id="container">
+      <div class="container">
       
-    <h1>Hoi</h1>
-    <p>
+    <h1 class="text-center mt-4">Hoi</h1>
+        <div class="text-center mt-4">
+      <h2>
        haha
-    </p>
-    <img id="banner", src="{{ url_for('static', filename='images/plaatje.png') }}" alt="User Image">
-    <p>
+    </h2>
+    <img class="img-fluid" id="banner", src="{{ url_for('static', filename='images/plaatje.png') }}" alt="User Image">
+    <h2>
        test
-    </p>
+    </h2>
       <p>
          GitHub is a platform for sharing and collaborating on software development projects which is powered by a version control system git. We can begin by heading to GitHub and creating a new repository.
       </p>
-      
+      <h2>Open positions</h2>
+        </div>
+        <p>TODO - Put some jobs here</p>
+       <div class="text-center">
+         <button class="btn btn-primary btn-lg">Contact Us</button>
+         <p>Copyright Rijk</p>
       </div>
   </body>
 </html>
