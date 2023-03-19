@@ -1,6 +1,6 @@
 from flask import Flask, render_template, jsonify
 
-href="{{ url_for('static', filename='images/plaatje.png') }}"
+href="{{ url_for('static', filename='images/plaatje.png', filename='images/office.webp') }}"
 
 JOBS = [
   {

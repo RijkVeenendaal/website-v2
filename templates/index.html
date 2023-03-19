@@ -20,11 +20,15 @@
     <h2 class="text-center">
        test
     </h2>
-          <div>
-      <p>
+          <div class='row'>
+            <div class='col-md-6'
+      <p class='lead'>
          GitHub is a platform for sharing and collaborating on software development projects which is powered by a version control system git. We can begin by heading to GitHub and creating a new repository.
       </p>
-            <img scr='static/images/office.webp' style='height:320px;'>
+            </div>
+            <div class='d-none d-md-block col-6'>
+  <img class="img-fluid" id="banner", src="{{ url_for('static', filename='images/office.webp') }}">
+          </div>
           </div>
    </div>
       <h2 class="text-center">Job Openings</h2>
