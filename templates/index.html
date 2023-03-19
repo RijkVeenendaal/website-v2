@@ -11,23 +11,24 @@
       <div class="container">
       
     <h1 class="text-center mt-4">Hoi</h1>
-        <div class="text-center mt-4">
+        <div  class="text-center">
       <h2>
-       haha
+       {{company}}
     </h2>
     <img class="img-fluid" id="banner", src="{{ url_for('static', filename='images/plaatje.png') }}" alt="User Image">
-    <h2>
+    <h2 class="text-center">
        test
     </h2>
       <p>
          GitHub is a platform for sharing and collaborating on software development projects which is powered by a version control system git. We can begin by heading to GitHub and creating a new repository.
       </p>
-      <h2>Open positions</h2>
-        </div>
-        <p>TODO - Put some jobs here</p>
+   </div>
+      <h2 class="text-center">Open positions</h2>
+        {% for job in jobs  %} 
+          {% include 'jobitem.html' %}
+        {% endfor %}
        <div class="text-center">
          <button class="btn btn-primary btn-lg">Contact Us</button>
          <p>Copyright Rijk</p>
-      </div>
   </body>
 </html>
